@@ -23,25 +23,23 @@
         }
 
         .info {
+            display: flex;
             flex: 0.2;
-            visibility: hidden;
             padding-top: 10px;
             font-weight: bold;
             color: darkred;
+            justify-content: center;
+            align-items: center;
             text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
                 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
         }
 
         /* Smartphone Portrait and Landscape */
-        @media only screen and (min-width : 320px) and (max-width: 480px) {
-            .info {
-                visibility: visible;
-            }
-
-            body {
+        /* @media only screen and (min-width : 320px) and (max-width: 480px) {
+             body {
                 justify-content: unset;
             }
-        }
+        }*/
 
         .container {
             justify-content: center;
@@ -215,10 +213,12 @@
             flex: 0.9;
             padding: 5px 5px 2px 5px;
             font-family: cursive;
+            font-weight: bold;
         }
 
         .para2 {
             margin-top: 2px;
+            text-align: center;
         }
 
         .footer {
@@ -240,7 +240,7 @@
             line-height: 150%;
         } */
     </style>
-    <div class="info" id="infoText"> Zoom in for better view </div>
+    <div class="info" id="infoText"> 👇 Tap on the card 👇 </div>
     <div class="container">
         <div class="christmas-card">
             <audio id="player" name="jingle-bells">
@@ -259,8 +259,8 @@
                 <div class="card-text">
                     <div id="nameDiv">Dear <span id="name"></span>,</div>
                     <div class="para2">
-                        May you feel the love this special day! May this festive season brings lots of joy and happiness
-                        in your life. May all of your wishes and dreams come true, and may you feel this happiness all
+                        May you feel the love this special day! <br/>May this festive season brings lots of joy and happiness
+                        in your life. <br/> May all of your wishes and dreams come true, and hope you feel this happiness all
                         year round.
                         <br /> Merry Christmas!
                     </div>
